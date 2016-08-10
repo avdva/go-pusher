@@ -1,12 +1,13 @@
 package pusher
 
+// Event is a pusher event
 type Event struct {
 	Event string `json:"event"`
 	Data  string `json:"data"`
 }
 
-// eventError represent a pusher:error data
+// eventError represents a pusher:error data
 type eventError struct {
-	message string `json:"message"`
-	code    int    `json:"code"`
+	Message string `json:"message"`
+	Code    int    `json:"code"`
 }
