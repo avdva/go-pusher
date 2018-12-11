@@ -5,8 +5,9 @@ package main
 // 		go run client.go
 
 import (
-	"github.com/toorop/go-pusher"
 	"log"
+
+	"github.com/avdva/go-pusher"
 )
 
 const (
