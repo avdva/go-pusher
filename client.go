@@ -167,6 +167,8 @@ func NewCustomClient(appKey, host, scheme string) (*Client, error) {
 		go pClient.heartbeat()
 		go pClient.listen()
 		return &pClient, nil
+	default:
+		return nil, errors.Errorf("unhandled event %s", event.Event)
 	}
 	return nil, errors.New("Ooooops something wrong happen")
 }
