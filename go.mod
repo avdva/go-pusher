@@ -4,3 +4,5 @@ require (
 	github.com/pkg/errors v0.8.0
 	golang.org/x/net v0.0.0-20181207154023-610586996380
 )
+
+go 1.13
